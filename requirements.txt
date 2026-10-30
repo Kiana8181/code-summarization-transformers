@@ -1,0 +1,26 @@
+# Core scientific stack
+numpy==1.26.4
+pandas==2.2.3
+matplotlib==3.9.2
+seaborn==0.13.2
+wordcloud==1.9.5
+
+# Deep learning (a CUDA GPU is strongly recommended for the full run)
+torch==2.5.1
+transformers==4.47.1
+accelerate==1.2.1
+sentencepiece==0.2.0
+protobuf==5.29.3
+
+# Dataset and evaluation metrics
+datasets==3.2.0
+pyarrow==18.1.0  # newer releases require NumPy 2
+evaluate==0.4.3
+sacrebleu==2.4.3
+rouge-score==0.1.2
+
+# Notebook execution and HTML/PDF export
+ipykernel==6.29.5
+nbclient==0.10.0
+nbconvert==7.16.6
+nbformat==5.10.4

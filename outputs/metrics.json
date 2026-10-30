@@ -1,0 +1,261 @@
+{
+  "source": "stored outputs of the original runs in notebooks/code_summarization_transformers.ipynb",
+  "warning": "25% of inputs still contain the target docstring, so all scores are inflated; see the README",
+  "runs": {
+    "A/T5-small": {
+      "run": "A",
+      "train_samples": 10072,
+      "test_samples": 298,
+      "epochs": 4,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.6112,
+          "val_loss": 2.104017,
+          "val_sacrebleu": 2.355347,
+          "val_rouge1": 0.29093,
+          "val_rouge2": 0.188096,
+          "val_rougeL": 0.272638,
+          "val_rougeLsum": 0.272447
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.3884,
+          "val_loss": 2.031534,
+          "val_sacrebleu": 2.645264,
+          "val_rouge1": 0.297942,
+          "val_rouge2": 0.185978,
+          "val_rougeL": 0.279647,
+          "val_rougeLsum": 0.279739
+        },
+        {
+          "epoch": 3,
+          "train_loss": 1.326,
+          "val_loss": 2.012433,
+          "val_sacrebleu": 2.162404,
+          "val_rouge1": 0.296413,
+          "val_rouge2": 0.187587,
+          "val_rougeL": 0.279235,
+          "val_rougeLsum": 0.279671
+        },
+        {
+          "epoch": 4,
+          "train_loss": 1.297,
+          "val_loss": 2.004211,
+          "val_sacrebleu": 2.682178,
+          "val_rouge1": 0.302706,
+          "val_rouge2": 0.187719,
+          "val_rougeL": 0.282557,
+          "val_rougeLsum": 0.283484
+        }
+      ],
+      "test": {
+        "loss": 1.3469,
+        "sacrebleu": 5.1876,
+        "rouge1": 0.3356,
+        "rouge2": 0.2146,
+        "rougeL": 0.3167,
+        "rougeLsum": 0.3182
+      },
+      "binary_search_prediction": "Define binary_search(nums, target): left, right = 0, len(nums) - 1 while left = right: mid = (left + right) // 2 if nums[mid"
+    },
+    "A/PLBART-base": {
+      "run": "A",
+      "train_samples": 10072,
+      "test_samples": 298,
+      "epochs": 4,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.1918,
+          "val_loss": 2.122359,
+          "val_sacrebleu": 2.434542,
+          "val_rouge1": 0.276906,
+          "val_rouge2": 0.176268,
+          "val_rougeL": 0.255246,
+          "val_rougeLsum": 0.256654
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8037,
+          "val_loss": 2.197422,
+          "val_sacrebleu": 0.844941,
+          "val_rouge1": 0.215672,
+          "val_rouge2": 0.138125,
+          "val_rougeL": 0.198732,
+          "val_rougeLsum": 0.19998
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.5607,
+          "val_loss": 2.339764,
+          "val_sacrebleu": 2.482399,
+          "val_rouge1": 0.284109,
+          "val_rouge2": 0.179017,
+          "val_rougeL": 0.260928,
+          "val_rougeLsum": 0.261755
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.3841,
+          "val_loss": 2.490232,
+          "val_sacrebleu": 2.737735,
+          "val_rouge1": 0.288533,
+          "val_rouge2": 0.18109,
+          "val_rougeL": 0.266469,
+          "val_rougeLsum": 0.267263
+        }
+      ],
+      "test": {
+        "loss": 1.3696,
+        "sacrebleu": 5.9857,
+        "rouge1": 0.3537,
+        "rouge2": 0.2265,
+        "rougeL": 0.3334,
+        "rougeLsum": 0.3344
+      },
+      "binary_search_prediction": "return -1 if no binary search"
+    },
+    "B/BART-base": {
+      "run": "B",
+      "train_samples": 10072,
+      "test_samples": 298,
+      "epochs": 4,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.2836,
+          "val_loss": 1.566172,
+          "val_sacrebleu": 4.859312,
+          "val_rouge1": 0.298413,
+          "val_rouge2": 0.165627,
+          "val_rougeL": 0.279997,
+          "val_rougeLsum": 0.289082
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.9074,
+          "val_loss": 1.544475,
+          "val_sacrebleu": 4.401213,
+          "val_rouge1": 0.297944,
+          "val_rouge2": 0.160837,
+          "val_rougeL": 0.28071,
+          "val_rougeLsum": 0.288736
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.7434,
+          "val_loss": 1.562656,
+          "val_sacrebleu": 4.849942,
+          "val_rouge1": 0.301897,
+          "val_rouge2": 0.168922,
+          "val_rougeL": 0.283666,
+          "val_rougeLsum": 0.290066
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.6288,
+          "val_loss": 1.599624,
+          "val_sacrebleu": 5.110354,
+          "val_rouge1": 0.299038,
+          "val_rouge2": 0.163512,
+          "val_rougeL": 0.281641,
+          "val_rougeLsum": 0.289938
+        }
+      ],
+      "test": {
+        "loss": 1.1922,
+        "sacrebleu": 5.6337,
+        "rouge1": 0.344,
+        "rouge2": 0.2107,
+        "rougeL": 0.3252,
+        "rougeLsum": 0.3331
+      },
+      "binary_search_prediction": "Perform binary search on a list of integers."
+    },
+    "B/CodeT5": {
+      "run": "B",
+      "train_samples": 10072,
+      "test_samples": 298,
+      "epochs": 4,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.0713,
+          "val_loss": 1.727071,
+          "val_sacrebleu": 4.279781,
+          "val_rouge1": 0.34247,
+          "val_rouge2": 0.199692,
+          "val_rougeL": 0.31222,
+          "val_rougeLsum": 0.329983
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.7939,
+          "val_loss": 1.739512,
+          "val_sacrebleu": 3.212998,
+          "val_rouge1": 0.328815,
+          "val_rouge2": 0.198977,
+          "val_rougeL": 0.303233,
+          "val_rougeLsum": 0.316469
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.6343,
+          "val_loss": 1.816467,
+          "val_sacrebleu": 3.105371,
+          "val_rouge1": 0.321593,
+          "val_rouge2": 0.195906,
+          "val_rougeL": 0.29489,
+          "val_rougeLsum": 0.309542
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.5282,
+          "val_loss": 1.883304,
+          "val_sacrebleu": 3.33403,
+          "val_rouge1": 0.327395,
+          "val_rouge2": 0.19914,
+          "val_rougeL": 0.299139,
+          "val_rougeLsum": 0.31426
+        }
+      ],
+      "test": {
+        "loss": 1.0364,
+        "sacrebleu": 10.2354,
+        "rouge1": 0.4084,
+        "rouge2": 0.2593,
+        "rougeL": 0.3809,
+        "rougeLsum": 0.3988
+      },
+      "binary_search_prediction": "Returns the index of the binary search.\n\n        :param nums: The numbers to search\n        :param target: The value to search\n        :return: The index of the binary search\n        :rtype: int"
+    },
+    "C/CodeT5": {
+      "run": "C",
+      "train_samples": 176274,
+      "test_samples": 7459,
+      "epochs": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.9974,
+          "val_loss": 1.094649,
+          "val_sacrebleu": 7.301585,
+          "val_rouge1": 0.392635,
+          "val_rouge2": 0.249566,
+          "val_rougeL": 0.368366,
+          "val_rougeLsum": 0.379968
+        }
+      ],
+      "test": {
+        "loss": 1.0161,
+        "sacrebleu": 7.596,
+        "rouge1": 0.4033,
+        "rouge2": 0.2562,
+        "rougeL": 0.378,
+        "rougeLsum": 0.3899
+      },
+      "binary_search_prediction": "Binary search for a given number.\n\n        :param nums: The number to search for.\n        :type nums: list\n        :param target: The number to search for.\n        :type target: int\n        :return: The binary search position.\n        :rtype:"
+    }
+  }
+}
